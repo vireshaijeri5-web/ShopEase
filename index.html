@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ec">
+  <meta name="description" content="ShopEase — thoughtfully chosen objects for everyday living.">
+
+  <title>ShopEase — Objects for Everyday Living</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    A LITTLE SOMETHING FOR YOUR EVERYDAY
+    <span>✳</span>
+    FREE SHIPPING ON ORDERS OVER ₹2,000
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="ShopEase home">
+      shop<span>ease</span><i>.</i>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#products">Shop all</a>
+      <a href="#about">Our story</a>
+    </nav>
+
+    <button
+      class="cart-button"
+      id="cart-button"
+      type="button"
+      aria-label="Open shopping bag"
+    >
+      Bag
+      <span class="cart-count" id="cart-count">0</span>
+      <span aria-hidden="true">↗</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="small-star">✳</span>
+          THE EVERYDAY EDIT · NO. 01
+        </p>
+
+        <h1>
+          Make room for<br>
+          <em>the good things.</em>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtful finds, beautiful details, and everyday essentials
+          that make ordinary moments feel a little more special.
+        </p>
+
+        <a href="#products" class="primary-link">
+          Explore the collection <span>↗</span>
+        </a>
+
+        <div class="hero-note">
+          <span class="note-line"></span>
+          <p>
+            Less, but better.<br>
+            <span>Chosen with intention.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img
+          src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1200&q=85"
+          alt="Thoughtfully arranged lifestyle objects"
+          class="hero-image"
+        >
+
+        <div class="image-label">
+          <span>THE SLOW LIVING COLLECTION</span>
+          <span>01 / 04</span>
+        </div>
+
+        <div class="floating-note">
+          <span class="floating-symbol">✳</span>
+          <span>Made for your<br>everyday rituals.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL TICKER -->
+    <section class="ticker" aria-label="ShopEase philosophy">
+      <div>
+        GOOD DESIGN, EVERYDAY
+        <span>✳</span>
+        THOUGHTFULLY CHOSEN
+        <span>✳</span>
+        LITTLE THINGS, BIG FEELING
+        <span>✳</span>
+        GOOD DESIGN, EVERYDAY
+        <span>✳</span>
+      </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="collections-section" id="collections">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A PLACE FOR EVERYTHING</p>
+          <h2>Find your <em>kind of lovely.</em></h2>
+        </div>
+
+        <p>
+          Small upgrades. Everyday favourites.<br>
+          Things you'll want to keep around.
+        </p>
+      </div>
+
+      <div class="collection-grid">
+
+        <a
+          class="collection-card collection-one"
+          href="#products"
+          data-collection="Accessories"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"
+            alt="Minimal wristwatch"
+            loading="lazy"
+          >
+
+          <span class="collection-index">01 — THE DETAILS</span>
+          <span class="collection-title">
+            Little luxuries <b>↗</b>
+          </span>
+        </a>
+
+        <a
+          class="collection-card collection-two"
+          href="#products"
+          data-collection="Electronics"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85"
+            alt="Over-ear headphones"
+            loading="lazy"
+          >
+
+          <span class="collection-index">02 — TUNE IN</span>
+          <span class="collection-title">
+            Everyday tech <b>↗</b>
+          </span>
+        </a>
+
+        <a
+          class="collection-card collection-three"
+          href="#products"
+          data-collection="Fashion"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85"
+            alt="Statement sneaker"
+            loading="lazy"
+          >
+
+          <span class="collection-index">03 — OUT & ABOUT</span>
+          <span class="collection-title">
+            On the move <b>↗</b>
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- PRODUCT CATALOG -->
+    <section class="products-section" id="products">
+      <div class="section-heading product-heading">
+        <div>
+          <p class="eyebrow">THE GOOD STUFF</p>
+          <h2>Current <em>favourites.</em></h2>
+        </div>
+
+        <p>
+          Picked for usefulness.<br>
+          Kept for the feeling.
+        </p>
+      </div>
+
+      <!-- SEARCH AND CATEGORY FILTER -->
+      <div class="product-controls">
+
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Find something lovely..."
+            aria-label="Search products"
+          >
+
+          <kbd>SEARCH</kbd>
+        </label>
+
+        <label class="filter-box">
+          <span>FILTER</span>
+
+          <select
+            id="category-filter"
+            aria-label="Filter products by category"
+          >
+            <option value="All">All objects</option>
+            <option value="Electronics">Technology</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Fashion">Fashion</option>
+          </select>
+        </label>
+
+      </div>
+
+      <div class="results-line">
+        <p id="results-count" aria-live="polite">
+          Our current selection
+        </p>
+
+        <p>
+          DESIGNED FOR REAL LIFE <span>✳</span>
+        </p>
+      </div>
+
+      <!-- JavaScript renders product cards here -->
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="brand-note">
+      <span class="brand-note-star">✳</span>
+
+      <p class="eyebrow">A SMALL NOTE FROM US</p>
+
+      <h2>
+        It's not about having more.<br>
+        It's about <em>loving what you have.</em>
+      </h2>
+
+      <p>
+        We believe the things around us should earn their place —
+        through usefulness, thoughtful design, or simply making us smile.
+      </p>
+
+      <a href="#products" class="text-link">
+        Meet your next favourite <span>↗</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="about">
+    <div class="footer-top">
+
+      <div>
+        <a class="logo footer-logo" href="#home">
+          shop<span>ease</span><i>.</i>
+        </a>
+
+        <p>
+          A little more thoughtful.<br>
+          A little more you.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <span>TAKE A LOOK</span>
+        <a href="#products">All products</a>
+        <a href="#collections">Collections</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+
+      <div class="footer-links">
+        <span>THE FINE PRINT</span>
+        <p>Independent concept store.</p>
+        <p>Made with care, for everyday.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ShopEase Studio</span>
+      <span>GOOD THINGS LIVE HERE ✳</span>
+    </div>
+  </footer>
+
+  <!-- SHOPPING CART BACKDROP -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- SHOPPING CART DRAWER -->
+  <aside
+    class="cart-panel"
+    id="cart-panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cart-title"
+    aria-hidden="true"
+  >
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">YOUR LITTLE COLLECTION</p>
+        <h2 id="cart-title">The good bag<span>.</span></h2>
+      </div>
+
+      <button
+        type="button"
+        id="close-cart"
+        class="close-cart"
+        aria-label="Close shopping bag"
+      >×</button>
+    </div>
+
+    <!-- JavaScript renders cart items here -->
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+
+      <p class="cart-note">
+        Shipping and taxes are calculated at checkout.
+      </p>
+
+      <button
+        type="button"
+        id="checkout-button"
+        class="checkout-button"
+      >
+        Continue to checkout ↗
+      </button>
+
+      <button
+        type="button"
+        id="continue-shopping"
+        class="continue-button"
+      >
+        Keep looking around
+      </button>
+
+      <p
+        id="checkout-message"
+        class="checkout-message"
+        aria-live="polite"
+      ></p>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAIL MODAL BACKDROP -->
+  <div
+    class="product-modal-overlay"
+    id="product-modal-overlay"
+  ></div>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <section
+    class="product-modal"
+    id="product-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="detail-name"
+    aria-hidden="true"
+  >
+    <button
+      type="button"
+      class="product-modal-close"
+      id="product-modal-close"
+      aria-label="Close product details"
+    >×</button>
+
+    <div class="product-modal-image-wrap">
+      <img
+        id="detail-image"
+        src=""
+        alt=""
+      >
+
+      <span class="product-modal-label">
+        THE EVERYDAY EDIT
+      </span>
+    </div>
+
+    <div class="product-modal-content">
+      <p class="eyebrow" id="detail-category">CATEGORY</p>
+
+      <h2 id="detail-name">Product name</h2>
+
+      <p class="detail-price" id="detail-price">₹0</p>
+
+      <p
+        class="detail-description"
+        id="detail-description"
+      ></p>
+
+      <div class="detail-quantity-row">
+        <span>QUANTITY</span>
+
+        <div class="quantity-control">
+          <button
+            type="button"
+            id="detail-decrease"
+            aria-label="Decrease quantity"
+          >−</button>
+
+          <span id="detail-quantity">1</span>
+
+          <button
+            type="button"
+            id="detail-increase"
+            aria-label="Increase quantity"
+          >+</button>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="checkout-button detail-add-button"
+        id="detail-add"
+      >
+        Add to your bag ↗
+      </button>
+
+      <p class="detail-footnote">
+        Thoughtfully chosen. Made for everyday.
+      </p>
+    </div>
+  </section>
+
+  <!-- NOTIFICATION -->
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+</body>
+</html>
